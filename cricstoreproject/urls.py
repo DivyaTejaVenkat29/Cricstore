@@ -16,9 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from cricapp import views
 from django.conf import settings
 from django.conf.urls.static import static
+from cricapp import views
+
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("",views.home_page_view),
@@ -30,4 +31,4 @@ urlpatterns = [
     path('about/',views.about_page_view),
 ]
 
-urlpatterns+=static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
+urlpatterns + = static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
