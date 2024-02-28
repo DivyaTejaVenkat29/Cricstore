@@ -1,0 +1,122 @@
+body {
+    background-image: url('/static/images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1,h2,p{
+color:red;
+}
+
+.content-box {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    padding: 20px;
+    border-radius: 2px;
+
+}
+
+/* .container {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
+        .navbar {
+            background-color: #0E6655;
+            padding: 10px 0;
+        }
+
+        /* Customize the brand logo */
+        .navbar-brand img {
+            height: 40px;
+
+        }
+
+        /* Customize the navbar links */
+         .navbar-nav .nav-link {
+            color: #fff;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+
+        .navbar-nav .nav-link:hover {
+            color: #0E6655  ; /* Change color on hover */
+        }
+
+        /* Style the search container */
+        .search-container {
+            display: flex;
+            align-items: center;
+			      margin-left:auto;
+            margin-bottom:auto;
+
+        }
+
+        #search-input {
+            padding: 10px;
+            width: 300px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        #search-button {
+            padding: 10px 20px;
+            background-color: #0E6655;
+            color: #fff;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        #search-button:hover {
+            background-color: #0E6655;
+        }
+        .icon-wrapper {
+            width: 200px;
+            height: 200px;
+            background: #16A085;
+            padding: 2.5em;
+            margin: 2em auto;
+            border-radius: 50%;
+            overflow: hidden;
+          }
+
+          h1 {
+            text-align: center;
+          }
+
+          .cls-1 {
+            fill: #fff;
+          }
+
+          .cls-2,
+          .cls-3 {
+            fill: none;
+            stroke: #fff;
+            stroke-miterlimit: 22.93;
+          }
+
+          .cls-2 {
+            stroke-width: 2px;
+          }
+
+          .icon-wrapper #bat {
+            transform-origin: bottom left;
+            transform: rotate(0) translate3d(0,0,0) scale(.9) rotateX(0deg);
+            transition: all .5s cubic-bezier(0.56, -1, 0.55, 1.5);
+          }
+          .icon-wrapper:hover #bat {
+            transform: rotate(30deg) scale(.75) rotateX(-10deg);
+          }
+          .icon-wrapper #ball {
+            transform: translate(0px, 0px);
+            transition: 500ms all ease-out .35s;
+          }
+          .icon-wrapper:hover #ball {
+            transform: translate(33px,50px);
+          }

@@ -1,0 +1,31 @@
+  .founders {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+    .founder {
+        text-align: center;
+        flex-basis: calc(53.333% - 20px); /* Adjust the basis and subtract the margin */
+        margin: 10px;
+    }
+    .founder img {
+        width: 300px;
+        height: 300px;
+        border-radius: 30%;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+    h2 {
+        color: #006600;
+    }
+    @media (max-width: 768px) {
+        .founders {
+            flex-direction: column;
+            align-items: center;
+        }
+        .founder {
+            width: 80%;
+            margin-bottom: 20px;
+        }
+    }

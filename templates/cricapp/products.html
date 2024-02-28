@@ -1,0 +1,124 @@
+{% extends 'cricapp/base.html' %}
+
+{% block search_container %}
+<div class="search-container" id="search-button">
+    <input type="text" id="search-input" class="form-control" placeholder="Search for products...">
+</div>
+{% endblock %}
+
+{% block title %}
+<title>Cricket Products</title>
+{% endblock %}
+
+{% block body_block %}
+{% load static %}
+
+<div class="container-fluid content-box">
+    <h2 style="color: #16A085; text-align: center;">Our Cricket Products</h2>
+
+    <!-- Cricket Kits Section -->
+    <div id="cricket-kits-section" class="container-fluid">
+        <h2 style="color: #16A085; text-align: center;">Cricket Kits</h2>
+        <div class="row">
+            <!-- Cricket Bat Card -->
+            <div class="col-sm-4" data-aos="flip-left">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static 'images/MRF cricket bat.jpeg' %}" class="card-img-top" alt="MRF cricket bat">
+                    <div class="card-body">
+                        <h5 class="card-title">Cricket Bat</h5>
+                        <p class="card-text">High-quality willow cricket bat, designed for professional gameplay.</p>
+                        <p class="card-text"><strong><span style="color:black;"><span style="color:black;">$</span></span>150.00</strong></p>
+                        <a href="#" class="bi bi-cart4 btn btn-outline-primary" onclick="addToCart('Cricket Bat', 150)">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Cricket Ball Card -->
+            <div class="col-sm-4" data-aos="flip-up">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static 'images/cricket-ball.jpg' %}" class="card-img-top" alt="Kookaburra Cricket Ball">
+                    <div class="card-body">
+                        <h5 class="card-title">Cricket Ball</h5>
+                        <p class="card-text">Premium leather ball with optimal bounce and swing capabilities.</p>
+                        <p class="card-text"><strong><span style="color:black;">$</span>25.00</strong></p>
+                        <a href="#" class="bi bi-cart4 btn btn-outline-primary" onclick="addToCart('Cricket Ball', 25)">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Cricket Gloves Card -->
+            <div class="col-sm-4" data-aos="flip-right">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static 'images/Kokaburra Gloves.jpeg' %}" class="card-img-top" alt="Kokaburra Cricket Gloves">
+                    <div class="card-body">
+                        <h5 class="card-title">Cricket Gloves</h5>
+                        <p class="card-text">Comfortable and durable gloves offering excellent grip and protection.</p>
+                        <p class="card-text"><strong><span style="color:black;">$</span>40.00</strong></p>
+                        <a href="#" class="bi bi-cart4 btn btn-outline-primary" onclick="addToCart('Cricket Gloves', 40)">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sportswear Section -->
+    <div id="sportswear-section" class="container-fluid">
+        <h2 style="color: #16A085; text-align: center;">Sportswear</h2>
+        <div class="row">
+            <!-- Sportswear Jersey  -->
+            <div class="col-sm-4" data-aos="fade-right">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static 'images/sportswear-jersey.jpg' %}" class="card-img-top" alt="Cricket Jersey">
+                    <div class="card-body">
+                        <h5 class="card-title">Cricket Jersey</h5>
+                        <p class="card-text">Lightweight and breathable cricket jersey for maximum comfort.</p>
+                        <p class="card-text"><strong><span style="color:black;">$</span>50.00</strong></p>
+                        <a href="#" class="bi bi-cart4 btn btn-outline-primary" onclick="addToCart('Cricket Jersey', 50)">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4" data-aos="fade-left">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static 'images/sportswear-pants.jpg' %}" class="card-img-top" alt="Sportswear Pants">
+                    <div class="card-body">
+                        <h5 class="card-title">Sportswear Pants</h5>
+                        <p class="card-text">Comfortable and flexible sportswear pants for cricket players.</p>
+                        <p class="card-text"><strong><span style="color:black;">$</span>40.00</strong></p>
+                        <a href="#" class="bi bi-cart4 btn btn-outline-primary" onclick="addToCart('Sportswear Pants', 40)">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Accessories Section -->
+    <div id="accessories-section" class="container-fluid">
+        <h2 style="color: #16A085; text-align: center;">Accessories</h2>
+        <div class="row">
+            <!-- Water-Bottle  -->
+            <div class="col-sm-4" >
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static 'images/water-bottle.jpg' %}" class="card-img-top" alt="Water Bottle">
+                    <div class="card-body">
+                        <h5 class="card-title">Water Bottle</h5>
+                        <p class="card-text">Durable water bottle with easy grip for hydration on the go.</p>
+                        <p class="card-text"><strong><span style="color:black;">$</span>15.00</strong></p>
+                        <a href="#" class="bi bi-cart4 btn btn-outline-primary" onclick="addToCart('Water Bottle', 15)">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- SweatBand  -->
+            <div class="col-sm-4" >
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static 'images/sweatband.jpg' %}" class="card-img-top" alt="Sweatband">
+                    <div class="card-body">
+                        <h5 class="card-title">Sweatband</h5>
+                        <p class="card-text">Comfortable sweatbands to keep you dry during intense matches.</p>
+                        <p class="card-text"><strong><span style="color:black;">$</span>10.00</strong></p>
+                        <a href="#" class="bi bi-cart4 btn btn-outline-primary"  onclick="addToCart('Sweatband', 10)">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more accessories items here -->
+        </div>
+    </div>
+</div>
+{% endblock %}
