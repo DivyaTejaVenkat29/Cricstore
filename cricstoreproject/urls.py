@@ -17,13 +17,17 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from cricapp import views
+from django.conf import settings
+from django.conf.urls.static import static
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("",views.home_page_view),
-    path("home/",views.home_page_view),    
+    path("home/",views.home_page_view),
     path('home/products/',views.product_page_view),
     path('products/',views.product_page_view),
     path('cart/',views.cart_page_view),
     path('sell/',views.sell_page_view),
     path('about/',views.about_page_view),
 ]
+
+urlpatterns+=static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
