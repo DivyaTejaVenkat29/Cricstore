@@ -70,10 +70,6 @@ moviepy==1.0.3
 multidict==6.0.4
 multipledispatch==1.0.0
 multitasking==0.0.11
-mysql==0.0.3
-mysql-connector==2.2.9
-mysql-connector-python==8.2.0
-mysqlclient==2.2.0
 nest-asyncio==1.5.8
 networkx==3.2.1
 numpy==1.26.2
