@@ -4,7 +4,6 @@
 This project is a full-stack e-commerce website for a cricket store, built using Django framework. It offers a platform to browse and purchase cricket equipment including sportswear, accessories, and cricket kits.
 
 ## Features
-- **User Authentication**: Users can sign up, log in, and log out securely.
 - **Product Catalog**: Browse a wide range of cricket products categorized into sportswear, accessories, and cricket kits.
 - **Shopping Cart**: Add products to a cart, update quantities, and proceed to checkout.
 - **Seller Interface**: Sellers can list their products for sale.
@@ -43,7 +42,12 @@ This project is a full-stack e-commerce website for a cricket store, built using
 - **templates/**: HTML templates for rendering dynamic content.
 
 ## Contributing
-Contributions are welcome! Feel free to submit bug reports, feature requests, or pull requests to help improve this project.
+Contributions are welcome! If you would like to contribute to the project, please follow these steps:
+- Fork the repository.
+- Create a new branch for your feature: git checkout -b feature-name
+- Make changes and commit them: git commit -am 'Add new feature'
+- Push your changes to the branch: git push origin feature-name
+- Submit a pull request with a detailed description of your changes.
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
